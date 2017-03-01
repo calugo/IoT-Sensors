@@ -22,7 +22,7 @@
 <body>
 
 <header>
-  <h1>Temperature Data from Arduino</h1>
+  <h1>Data from Arduino</h1>
 </header>
 
 <div id="chart">
@@ -65,7 +65,7 @@ eon.chart({
       },
       y: {
         label: {
-          text: 'Celsius',
+          text: 'Sensor',
           position: 'outer-middle'
         },
         tick: {
@@ -79,7 +79,7 @@ eon.chart({
 },
 //history:true,
 pubnub: pubnub,
-limit: 30,
+limit: 300,
 transform: function(m) {
   return { eon: {
       temperature: m.temperature
